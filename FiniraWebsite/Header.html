@@ -32,9 +32,7 @@
 
     <section class="hero">
         <div class="hero-content">
-            <h1 class="animate__animated animate__zoomIn animate__infinite">
-                Finira <span>Group</span> <strong>of</strong> Companies
-            </h1>
+            <h1>Finira <span>Group</span> <strong>of</strong> Companies</h1>
             <p>Finira Group of Companies is a <strong>Conglomerate</strong>. Our vision is to top in all <br> the industries with <span class="highlight">innovation</span> and <span class="highlight">Technology</span>.</p>
         </div>
     </section>
@@ -124,7 +122,7 @@
             <p>Get New Updates of our Company by Subscribing to our Newsletter</p>
             <input type="text" placeholder="Email" required/>
             <br>
-            <button>Subscribe</button>
+            <button onclick="clickbutton()">Subscribe</button>
           </div>
         </section>
 
@@ -163,6 +161,19 @@
             const navLinks = document.querySelector('.nav-links');
             navLinks.classList.toggle('show');
         }
+
+        function clickbutton() {
+        const emailInput = document.querySelector('input'); 
+        const email = emailInput.value.trim(); 
+
+        if (email === '') {
+        alert('Please enter your email address!');
+        return;
+       }
+        
+       alert('Subscription successful! Thank you for subscribing with: ' + email);
+       emailInput.value = '';
+       }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
