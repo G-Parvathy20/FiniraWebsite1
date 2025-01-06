@@ -223,11 +223,7 @@ header {
         height: 150px;
     }
 
-    /* Careers section */
-    #careers p{
-        padding:10px;
-    }
-
+    
     /* Media Section */
     #media .subscribe{
         padding:10px;
@@ -435,10 +431,14 @@ button a {
         font-size: 1.2rem;
     }
     .card-title {
-        font-size: 1.2rem;
+        font-size: 14px;
+        text-align: center;
     }
     .card-icons {
-        display: none;
+        display: flex;
+    }
+    .card-icons a{
+        font-size: 15px;
     }
     .btn {
         width: 100%;
